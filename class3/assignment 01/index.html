@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 01</title>
+
+    <!--* STYLES -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ***************************************** -->
+    <!--* CURRENCY CONVERTER -->
+
+    <form id="converter">
+      <h1>CURRENCY CONVERTER</h1>
+      <div>
+        <label for="amount">Amount: </label>
+        <input type="number" name="amount" id="amount" />
+        <select name="currency" id="currency">
+          <option value="pkr">Rupees</option>
+          <option value="usd">US Dollars</option>
+        </select>
+      </div>
+
+      <button type="submit">Convert</button>
+
+      <h2 id="converted">Converted Amount<span></span></h2>
+    </form>
+
+    <!-- ***************************************** -->
+    <!--* GRADE CHECKER -->
+
+    <form id="grade">
+      <h1>GRADE CHECKER</h1>
+      <div>
+        <label for="marks"> Marks: </label>
+        <input type="number" name="marks" id="marks" />
+        <button type="submit">Check Grade</button>
+      </div>
+      <h2 id="Grade">Grade</h2>
+    </form>
+
+    <!-- ***************************************** -->
+    <!--* JACKET CHECKER -->
+
+    <form id="checker">
+      <h1>JACKET CHECKER</h1>
+      <div>
+        <label for="temprature"> Temprature: </label>
+        <input type="number" name="temprature" id="temprature" />
+        <button type="submit">Check temprature</button>
+      </div>
+      <h2 id="checked">Temprature</h2>
+    </form>
+
+    <!--* SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>

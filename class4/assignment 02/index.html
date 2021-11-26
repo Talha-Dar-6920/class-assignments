@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 02</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <h1>ADD STUDENTS</h1>
+      <div>
+        <label for="name"> Name: </label>
+        <input type="text" name="name" id="name" placeholder="Enter Name" />
+      </div>
+      <div>
+        <label for="science"> Science: </label>
+        <input
+          type="text"
+          name="science"
+          id="science"
+          placeholder="Enter Marks of Science"
+        />
+      </div>
+      <div>
+        <label for="computer"> Computer: </label>
+        <input
+          type="text"
+          name="computer"
+          id="computer"
+          placeholder="Enter Marks of Computer"
+        />
+      </div>
+      <div>
+        <label for="math"> Math: </label>
+        <input
+          type="text"
+          name="math"
+          id="math"
+          placeholder="Enter Marks of Math"
+        />
+      </div>
+      <div>
+        <label for="english"> English: </label>
+        <input
+          type="text"
+          name="english"
+          id="english"
+          placeholder="Enter Marks of English"
+        />
+      </div>
+      <div>
+        <label for="urdu"> Urdu: </label>
+        <input
+          type="text"
+          name="urdu"
+          id="urdu"
+          placeholder="Enter Marks of Urdu"
+        />
+      </div>
+
+      <button type="submit">Add Student</button>
+    </form>
+
+    <div class="render">
+      <h1>RENDER STUDENTS</h1>
+      <button id="render__data">Render Students Data</button>
+      <table id="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>SCIENCE</th>
+            <th>COMPUTER</th>
+            <th>MATHS</th>
+            <th>ENGLISH</th>
+            <th>URDU</th>
+            <th>TOTAL</th>
+            <th>OBTAINED</th>
+            <th>PERCENTAGE</th>
+            <th>GRADE</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  padding: 8px 10px;
+  width: 20%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid grey;
+}
+
+#task16 input,
+#task17 input,
+#task18 .input1,
+#task19 input,
+#task20 .input1 {
+  width: 35%;
+}
+
+#task06 input {
+  width: 15%;
+}
+
+#task06 .input3,
+#task06 .input4 {
+  width: 10%;
+}
+
+select {
+  padding: 5px;
+}
+
+button {
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  transition: all 0.2s;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.479);
+}
+
+button:active {
+  transform: translateY(-3px);
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.479);
+}

@@ -1,0 +1,88 @@
+#form,
+#table {
+  padding: 20px 50px;
+  border: 1px solid grey;
+  margin: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#form div {
+  padding: 20px;
+  width: 40%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form div.result {
+  width: 100%;
+}
+
+#form #m2 {
+  border-left: 2px double grey;
+  padding-left: 90px;
+}
+
+#form div div {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+#form div.result div {
+  width: 35%;
+}
+
+#form div div input {
+  padding: 10px;
+  font-size: 20px;
+  width: 60%;
+}
+
+#form #buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+#form button {
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  transition: all 0.2s;
+}
+
+#form button:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.479);
+}
+
+#form button:active {
+  transform: translateY(-3px);
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.479);
+}
+
+#table tbody {
+  margin-left: 50px;
+}
+
+#table tbody td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+}

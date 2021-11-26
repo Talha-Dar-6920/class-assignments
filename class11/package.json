@@ -1,0 +1,17 @@
+{
+  "name": "class11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "Talha Dar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

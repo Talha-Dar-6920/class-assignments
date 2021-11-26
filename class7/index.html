@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 07</title>
+  </head>
+  <body>
+    <button id="btn1">Addition</button>
+    <button id="btn2">Subtraction</button>
+    <button id="btn3">Multiply</button>
+    <button id="btn4">Divide</button>
+
+    <script>
+      //   function talhaHairCut(cutting) {
+      //     console.log(cutting);
+      //   }
+
+      //   talhaHairCut('talha');
+
+      //   //* Different Ways To Write Functions
+
+      //   //* 1st way // Hoisting Yes
+      //   function function01(i1, i2) {
+      //     return `Function Type 01: ${i1} ${i2}`;
+      //   }
+      //   console.log(function01(2, 19));
+
+      //   //* 2nd way // Hoisting No
+      //   //* Anonymous Function Used OR Function Expression
+      //   const function02 = function (i1, i2) {
+      //     return 'Function Type 02: ' + (i1 + i2);
+      //   };
+      //   console.log(function02(11, 19));
+
+      //   //* ES6 All Functions Are Anonymous
+
+      //   //* 3rd way // Hoisting No
+      //   const function03 = (i1, i2) => {
+      //     return 'Function Type 03: ' + (i1 + i2);
+      //   };
+      //   console.log(function03(11, 20));
+
+      //   //* 4th way // Hoisting No
+      //   const function04 = (input1, input2) =>
+      //     'Function Type 04: ' + (input1 + input2);
+      //   console.log(function04(9, 9));
+
+      //   //* 5th way // Hoisting No
+      //   const function05 = (i1) => 'Function Type 05: ' + (i1 + i1 + i1);
+      //   console.log(function05(9));
+
+      // MATRIX CALCULATION USING FUNCTIONS
+      const btn1 = document.getElementById('btn1');
+      const btn2 = document.getElementById('btn2');
+      const btn3 = document.getElementById('btn3');
+      const btn4 = document.getElementById('btn4');
+
+      const matrix1 = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+      ];
+
+      const matrix2 = [
+        [10, 11, 12],
+        [13, 14, 15],
+        [16, 17, 18],
+      ];
+
+      const matrixConverter = (e) => {
+        const matrix = [];
+        const innerText = e.target.innerText;
+        const operator =
+          innerText === 'Addition'
+            ? '+'
+            : innerText === 'Subtraction'
+            ? '-'
+            : innerText === 'Multiply'
+            ? '*'
+            : innerText === 'Divide'
+            ? '/'
+            : '';
+
+        for (let i = 0; i < matrix1.length; i++) {
+          for (let j = 0; j < matrix1[i].length; j++) {
+            matrix.push(eval(matrix1[i][j] + operator + matrix2[i][j]));
+          }
+        }
+
+        console.log(matrix);
+
+        return matrix;
+      };
+
+      btn1.addEventListener('click', matrixConverter);
+      btn2.addEventListener('click', matrixConverter);
+      btn3.addEventListener('click', matrixConverter);
+      btn4.addEventListener('click', matrixConverter);
+    </script>
+  </body>
+</html>

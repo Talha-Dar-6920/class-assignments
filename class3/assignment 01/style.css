@@ -1,0 +1,79 @@
+#converter,
+#grade,
+#checker {
+  padding: 20px 50px;
+  border: 1px solid grey;
+  margin: 20px;
+  text-align: center;
+}
+
+#converter div,
+#grade div,
+#checker div {
+  margin: 10px;
+}
+
+#converter label,
+#grade label,
+#checker label {
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  width: 120px;
+}
+
+#converter input,
+#grade input,
+#checker input {
+  padding: 8px 10px;
+  width: 40%;
+}
+
+#converter #currency {
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+#converter button,
+#grade button,
+#checker button {
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  transition: all 0.2s;
+}
+
+#converter button:hover,
+#grade button:hover,
+#checker button:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.479);
+}
+
+#converter button:active,
+#grade button:active,
+#checker button:active {
+  transform: translateY(-3px);
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.479);
+}
+
+#grade button,
+#checker button {
+  margin-left: 50px;
+}
+
+#converter h2,
+#grade h2,
+#checker h2 {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
