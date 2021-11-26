@@ -21,7 +21,7 @@ const request = async (url, type, data, heads) =>
 const getUsers = async () => {
   //****************************  SECTION  ********************************* */
   //? SETTING UP THE URL
-  const url = `https://node-mongo-server-class16.herokuapp.com/users`;
+  const url = `https://basic-node-mongo-crud-app.herokuapp.com/users`;
 
   table.querySelector('tbody').innerHTML =
     '<tr><td colspan="6" class="text-center p-5"><div class="spinner-border" role="status"><span class="sr-only"></span></div><span class="ms-5">Loading users Please Wait.....</span></td></tr>';
@@ -91,7 +91,7 @@ form.addEventListener('submit', async (e) => {
   //****************************  SECTION  ********************************* */
   //? WAITING FOR THE RESPONSE OF THE REQUEST
   const response = await request(
-    `https://node-mongo-server-class16.herokuapp.com/user${
+    `https://basic-node-mongo-crud-app.herokuapp.com/user${
       type === 'POST' ? '' : `/${id}`
     }`,
     type,
@@ -135,7 +135,7 @@ const editUserHandler = async (id) => {
 
   //? WAITING FOR THE RESPONSE OF THE REQUEST
   const userData = await request(
-    `https://node-mongo-server-class16.herokuapp.com/user/${id}`,
+    `https://basic-node-mongo-crud-app.herokuapp.com/user/${id}`,
     'GET'
   ); //? PASSING THE PARAMETERS FOR THE REQUEST FUNCTION
 
@@ -158,7 +158,7 @@ const editUserHandler = async (id) => {
 const deleteUserHandler = async (id) => {
   //****************************  SECTION  ********************************* */
   //? SETTING UP THE URL ACCORDING TO THE ID IF SPECIFIED
-  const url = `https://node-mongo-server-class16.herokuapp.com/user/${id}`;
+  const url = `https://basic-node-mongo-crud-app.herokuapp.com/user/${id}`;
 
   document.getElementById('loader_btn').click();
   document.getElementById('Loading_text').innerHTML = 'Deleting User';

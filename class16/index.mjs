@@ -3,7 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 
 mongoose.connect(
-  'mongodb+srv://talha-dar:0202029999@chatbot.dvzlh.mongodb.net/users?retryWrites=true&w=majority'
+  'mongodb+srv://talha-dar:0202029999>@chatbot.dvzlh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 );
 
 const users = mongoose.model('Users', {
